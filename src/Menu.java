@@ -21,11 +21,11 @@ public class Menu {
 
     public void generateInvoice() {
         System.out.println("---------------------- Pemesanan Tiket -------------------------");
-        System.out.print("Masukan Nama Lengkap\t\t: ");
+        System.out.print("Nama Lengkap\t: ");
         String nama = input.nextLine();
-        System.out.print("Masukkan Umur\t\t : ");
+        System.out.print("Umur\t\t: ");
         int umur = input.nextInt();
-        System.out.print("Masukkan No.Telepon\t\t : ");
+        System.out.print("No. Telp\t: ");
         String telp = input.next();
         
         film.getAllFilm();
@@ -33,7 +33,7 @@ public class Menu {
         System.out.println("-------------------------- PILIH FILM --------------------------");
         System.out.print("Masukan id film (ex: 5) : ");
         int idFilm = input.nextInt();
-        System.out.print("Masukan quantity : ");
+        System.out.print("Masukan quantity\t: ");
         int quantity = input.nextInt();
         
         customer.insert(nama, telp, umur);

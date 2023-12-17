@@ -9,12 +9,12 @@ public class Film extends Connector {
 
 
     public void insertDataFilm() {
-        System.out.print("\nJudul\t\t: "); String nama = s.nextLine();
-        System.out.print("Rating\t\t: "); Float rating = Float.parseFloat(s.nextLine());
-        System.out.print("Genres\t\t: "); String genres = s.nextLine();
-        System.out.print("Price\t: "); int price = Integer.parseInt(s.nextLine());
+        System.out.print("\nJudul\t\t\t: "); String nama = s.nextLine();
+        System.out.print("Rating\t\t\t: "); Float rating = Float.parseFloat(s.nextLine());
+        System.out.print("Genres\t\t\t: "); String genres = s.nextLine();
+        System.out.print("Price\t\t\t: "); int price = Integer.parseInt(s.nextLine());
         System.out.print("18++ (0/1) | (No/Yes)\t: "); int isAdult = Integer.parseInt(s.nextLine());
-        System.out.print("Duration\t: "); int duration = Integer.parseInt(s.nextLine());
+        System.out.print("Duration\t\t: "); int duration = Integer.parseInt(s.nextLine());
 
         insert(nama, rating, genres, price, isAdult, duration);
     }
